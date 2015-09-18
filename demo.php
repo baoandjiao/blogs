@@ -686,6 +686,18 @@ if(!$mail->Send()) {
 } */
 //var_dump(json_decode("UserInfo":{"UserName":"654991042@qq.com","Province":"","Brand":"","Status":"","NickName":"","AuthUserID":"15091452107940","IdentCode":"","IdentCodeLevel":"","UID":"80093cbf60514d10bea25245616a75d6"},true));
 
-$checksum = crc32("192.168.1.100:80");
-printf("%u\n", $checksum);
+// $checksum = crc32("192.168.1.100:80");
+// printf("%u\n", $checksum);
+// $array = array('HTTP_X_FORWARDED_FOR', 'REMOTE_ADDR', 'HTTP_CLIENT_IP');
+        // foreach ($array as $method) {
+            // $true_ip = getenv($method);
+        // }
+    // var_dump($true_ip);
+	
+	
+	
+// $first_token  = strtok('/something', '/');
+// $second_token = strtok('/');
+// var_dump($first_token, $second_token);
 
+var_dump(getenv('HTTP_CLIENT_IP'));
