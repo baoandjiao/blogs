@@ -11,4 +11,9 @@
     	protected $_auto = array(
         	array('create_time','time',1,'function')
         );
+
+        public static function getUser(){
+        	$user = M('user');
+        	return  $user;
+        }
 	}
